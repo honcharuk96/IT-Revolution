@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 3 Contact form with Validation</title>
+ <!--  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script> -->
+
+
+  
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+  
+
+  <script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--script-->
+
+</head>
+
+<body>
+  <div class="header">
+     <div class="slider">
+        <ul class="rslides" id="slider1">
+          <li>
+            <img src="images/banner.jpg" alt="">
+            <div class="header-matter">
+              <h2>IT-<span>REVOLUTION`17</span></h2>             
+              <label class="make"> </label>           
+              <div class="matter-we">
+                <a class="we-better" href="#">
+                 <video width="320px" height="225px" autoplay loop muted>
+             <!--       <source src="video/tizer.mp4" > -->
+                 </video>
+                </a>
+                <div class=" better">
+                  <h4>Що таке формат </h4>
+                  <label>HACKATHON?</label>
+                  <p>IT-REVOLUTION – це змагання з програмування серед
+                      студентів, традиційно проводиться у форматі
+                      Hackathon.
+                      Учасникам необхідно розробити проект, який
+                      відповідає поставленому завданню. На виконання
+                      команда має лише 24 години, по завершенню яких
+                      проект повинен бути готовий до представлення перед
+                      суддями.
+                  </p>
+                </div>
+                <div class="clearfix"> </div>
+              </div>
+            </div>
+          </li>
+          <li><img src="images/banner1.jpg" alt="">
+            <div class="header-matter">
+              <h2>we.<span>make</span></h2>
+              <label class="make"> </label>
+              <div class="matter-we">
+                <a class="we-better" href="#">
+                  <span> </span>
+                </a>
+                <div class=" better">
+                  <h4>your</h4>
+                  <label>business better</label>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="clearfix"> </div>
+              </div>
+            </div>
+          </li>
+          <li><img src="images/banner.jpg" alt="">
+          
+          </li>
+        </ul>
+       </div>   
+        <!---->
+       <div class="top-header">
+     
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="images/logo.png" alt="" /></a>
+        </div>
+        <div class="top-nav">
+            <label class="menu"> </label>
+          <ul>
+            <li ><a href="#home" class="scroll">головна<span class="home"> </span></a></li>
+            <li><a href="#content" class="scroll">категорії <span class="us-box"> </span></a></li>
+            <li><a href="#blog" class="scroll">розклад <span class="port-box"> </span></a></li>
+            <li><a href="#team" class="scroll">партнери <span class="blog-box"> </span></a></li>
+            <li><a href="#contact" class="scroll">реєстрація <span class="tack-box"> </span></a></li>
+          </ul>
+          <!-- script-nav -->
+      <script>
+      $("label.menu").click(function(){
+        $(".top-nav ul").slideToggle(700, function(){
+        });
+      });
+      </script>
+      <script type="text/javascript">
+          jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){   
+              event.preventDefault();
+              $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+          });
+          </script>
+        <!-- //script-nav -->
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+  <!--//header-->
+  <!--content-->
+  <div class="content">
+    <div class="global-design" id="about">
+      <div class="portfolio-top category">
+          <h3>Список категорій</h3>
+          <img class="img-responsive line-grid" src="images/li-6.png" alt=""> 
+      </div>
+
+      <div class="container"> 
+        <div class=" idea-get">
+          <img src="images/web.png" alt="" />
+          <h4>WEB</h4> 
+          <p>Результатом розробки в цій категорії є web-додаток на задану тематику.</p>   
+        </div>
+        <div class=" idea-get">
+          <img src="images/app.png" alt="" />
+          <h4>Mobile Application</h4> 
+          <p>Дана категорія передбачає розробку мобільного додатку на вказану тематику.</p>   
+        </div>
+        <div class=" idea-get we-get-grid">
+          <img src="images/game.png" alt="" />
+          <h4>Mobile Game</h4> 
+          <p>У цій категорії необхідно створити гру для мобільного пристрою.</p>   
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    
+    
+<!--728x90-->
+<div class="blog" id="blog">
+     <div class="container">
+      
+        <div class="blog-top">
+          <h3> РОЗКЛАД ЗАХОДІВ</h3>
+          <img class="img-responsive line-blog" src="images/li-1.png" alt=""> 
+         
+        </div>
+        
+        <div class="blog-bottom">
+            <div class="col-md-3 blog-date">
+              <h6>16-29</h6>
+              <label>ЖОВТНЯ 2017</label>
+            </div>
+             <div class="col-md-6 post-grid ">
+                <h3>ПЕРІОД РЕЄСТРАЦІЇ</h3>
+              <!--  <img class="img-responsive line-post" src="images/li-4.png" alt=""> -->
+                <p>  Початок реєстрація команд. В одній команді повино знаходитись від 2 до 4-х людей </p> 
+            </div>
+          <div class="clearfix"> </div>
+        </div>
+
+         <div class="blog-bottom">
+     
+            <div class="col-md-4"></div>
+            <div class=" col-md-6 post-grid">
+              <h3 class="the-blog">IT-КОНФЕРЕНЦІЯ</h3>
+               <!-- <img class="img-responsive line-post" src="images/li-5.png" alt=""> -->
+              <p> Відбудеться IT-конференція, на якій спікери розкажуть про використання новітніх технологій та поділяться досвідом роботи в провідних компаніях. </p> 
+            </div>
+              <div class="col-md-2 blog-date">
+                <h6>19</h6>
+                <label>ЖОВТНЯ 2017</label>
+             </div>
+         <div class="clearfix"> </div>
+          </div>
+        <div class="blog-bottom">
+         
+            <div class="col-md-3 blog-date">
+              <h6>1-5</h6>
+              <label>ЛИСТОПАДА 2017</label>
+            </div>
+
+             <div class="col-md-6 post-grid ">
+                <h3>ВИКОНАННЯ ТЕСТОВОГО ЗАВДАННЯ</h3>
+              <!--  <img class="img-responsive line-post" src="images/li-4.png" alt=""> -->
+                <p> На виконання тестового завдання для категорій<span> Mobile App., Mobile Game </span> надається <span>4. </span> Для <span> Web</span> виділяється <span>5 днів. </span> </p> 
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+         
+         <div class="blog-bottom">
+     
+            <div class="col-md-3"></div>
+            <div class=" col-md-6 post-grid">
+              <h3 class="the-blog">ОГОЛОШЕННЯ РЕЗУЛЬТАТІВ</h3>
+               <!-- <img class="img-responsive line-post" src="images/li-5.png" alt=""> -->
+              <p> Очікуйте оголошення результатів ;) </p> 
+            </div>
+              <div class="col-md-3 blog-date">
+                <h6>9-10</h6>
+                <label>ЛИСТОПАДА 2017</label>
+             </div>
+         <div class="clearfix"> </div>
+          </div>
+
+          <div class="blog-bottom">
+            <div class="col-md-3 blog-date">
+              <h6>18-19</h6>
+              <label>ЛИСТОПАДА 2017</label>
+            </div>
+             <div class="col-md-6 post-grid ">
+                <h3>ФІНАЛЬНИЙ ЕТАП</h3>
+              <!--  <img class="img-responsive line-post" src="images/li-4.png" alt=""> -->
+                <p>  в фінал проходять <span>6</span> найкращих команд <span>в кожній з категорій</span></p> 
+            </div>
+          <div class="clearfix"> </div>
+        </div>
+
+            <div class="clearfix"> </div>
+        </div>
+</div>
+
+    <!-- -->
+    <div class="team">
+      <div class="container">
+        <div class="team-top">
+          <h3>НАШІ ПАРТНЕРИ</h3>
+          <img class="img-responsive line-grid" src="images/li-1.png" alt=""/> 
+        
+        </div>
+
+        <div class="team-bottom">
+           <div class="col-md-12">
+              <div class="col-md-3 partners"><img  src="images/exadel.png"></div>
+              <div class="col-md-3 partners"><img  src="images/binary.png"></div>
+              <div class="col-md-3 partners"><img  src="images/artinov.png"></div>
+              <div class="col-md-3 partners"><img  src="images/exadel.png"></div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-3 partners"><img  src="images/exadel.png"></div>
+              <div class="col-md-3 partners"><img  src="images/exadel.png"></div>
+              <div class="col-md-3 partners"><img  src="images/exadel.png"></div>
+              <div class="col-md-3 partners"><img  src="images/exadel.png"></div>
+            </div>
+        </div>  
+      </div>
+    </div>
+    
+    
+    <!---->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="contact-top">
+          <h3>РЕЄСТРАЦІЯ УЧАСНИКА</h3>
+          <img class="img-responsive line-grid" src="images/li-1.png" alt=""/> 
+         
+        </div>
+     
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Us Today!</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">П.І.Б</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="name" placeholder="П.І.Б." class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Дата народження</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="date" placeholder="Date" class="form-control"  type="date">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="mail">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Навчальний заклад</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="university" placeholder="Навчальний заклад" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Курс, Факультет, Група</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="group_un" placeholder="Курс, Факультет, Група" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Категорія</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="category" class="form-control selectpicker" >
+      <option value=" " >Виберіть категорію</option>
+      <option>Web</option>
+      <option>Mobile Application</option>
+      <option>Mobile Game</option>
+   
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Назва команди</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="team_name" placeholder="Назва команди" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Номер телефону #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Місто</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >Виберіть місто проживання</option>
+      <option>Вінниця</option>
+      <option>Дніпро</option>
+      <option >Донецьк</option>
+      <option >Житомир</option>
+      <option >Запоріжжя</option>
+      <option >Івано-Франківськ</option>
+      <option >Київ</option>
+      <option >Краматорськ</option>
+      <option >Кропивницький</option>
+      <option> Луганськ</option>
+      <option >Луцьк</option>
+      <option >Львів</option>
+      <option >Миколаїв</option>
+      <option >Одеса</option>
+      <option >Полтава</option>
+      <option >Рівне</option>
+      <option> Суми</option>
+      <option >Тернопіль</option>
+      <option >Ужгород</option>
+      <option>Харків</option>
+      <option >Херсон</option>
+      <option> Хмельницький</option>
+      <option >Черкаси</option>
+      <option >Чернівці</option>
+      <option>Чернігів</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- radio checks -->
+ <div class="form-group">
+                        <label class="col-md-4 control-label">Ваша стать</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="yes" /> чоловіча
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="no" /> жіноча
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Ви успішно зареєстровані! </div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Відправити <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+     </div>
+        </form>
+        <div class="contact-bottom">
+          <div class="col-md-5 sit-contact">
+            <h5>Lorem ipsum dolor sit</h5>
+            <div class="contact-add">
+              <p>consectetur adipiscing</p>
+              <p>incididunt ut 795-4378</p>
+              <p>(586)769-9037</p>
+            </div>
+            <h5>Lorem ipsum dolor sit</h5>
+            <div class="contact-add">
+              <p>consectetur adipiscing</p>
+              <p>incididunt ut 795-4378</p>
+              <p>(586)769-9037</p>
+            </div>
+            <ul class="face">
+              <li class="active"><a href="#">facebook </a><span>/</span></li>
+              <li><a href="#">twitter </a><span>/</span></li>
+              <li><a href="#">linked in </a><span>/</span></li>
+              <li><a href="#">dribbble</a></li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20840.51089782446!2d28.453289393507248!3d49.23727840503432!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sin!4v1507999119899" ></iframe>
+            </div>
+          
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--//content-->
+  <!--footer-->
+  <div class="footer">
+   
+     
+      <div class="footer-bottom">
+        <p class="footer-class">&copy; 2017 Board Europen Student Tecnology.</p>
+      </div>
+      <script type="text/javascript">
+            $(document).ready(function() {
+              /*
+              var defaults = {
+                  containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+              };
+              */
+              
+              $().UItoTop({ easingType: 'easeOutQuart' });
+              
+            });
+          </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+   </div>
+  <!--//footer-->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
